@@ -57,6 +57,12 @@ Tested in a conda env (`python 3.11`): `conda create -n eeg-qc python=3.11 && pi
 | `02_hyperventilation` | % theta build-up during/after the challenge; post-challenge alpha | `hv_exp` |
 | `03_speech_language` | interview vs rest, listening vs answering, Broca/Wernicke homologues, reading vs dialogue | `*_speak_listen` |
 | `04_anomaly_screen` | spike/sharp-wave candidates (all blink/muscle), focal delta, line noise, posterior alpha asymmetry, crash tails | `spike_candidates` |
+| `05_hv_breathing` | breathing belt amplitude & rate across rest / hyperventilation / speech | — (tables) |
+| `06_marker_verification` | re-derives stage bounds from markers; redundant "100" events & ~180 s durations | — |
+| `07_speech_stage_metrics` | full per-stage C alpha/beta, fmTheta, blinks, GSR + ERD + post-stage comparisons | — |
+| `08_electrode_dynamics` | when each channel died / revived mid-session | — |
+| `09_baseline_inflation` | per-stage band levels — shows the interview's broadband-inflation caveat | — |
+| `10_overview_plots` | per-recording overview (Oz, belt, GSR) with stage shading | `overview_exp1` … `overview_ctrl2` |
 
 Open a notebook and **Run ▸ Restart ▸ Run All** (with data present).  Or from the command line:
 ```bash
