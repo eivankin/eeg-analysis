@@ -1,0 +1,38 @@
+# --- raw data (never committed; large + personal) ---
+data/
+*.edf
+*.sm
+
+# --- exploratory / working scripts kept on disk but not shared ---
+qc/
+
+# --- working report drafts / scratch txt (kept on disk) ---
+RESEARCH_REPORT.md
+qc/*.txt
+
+# --- notebook/tooling noise ---
+*/.ipynb_checkpoints/
+**/__pycache__/
+*.pyc
+.DS_Store
+
+# --- session-orchestrator telemetry ---
+.orchestrator/
+
+# pi/pi-agent session dir
+.pi/
+
+# preserved pre-anonymization PDFs for side-by-side validation
+legacy/
+
+# private experiment documentation
+experiment_info/
+
+# --- LaTeX build artifacts (may leak absolute paths / build metadata) ---
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
